@@ -2,19 +2,18 @@ import React from 'react'
 import { View, Image, StyleSheet } from 'react-native'
 
 import { Texto } from '../../../components/Texto.js'
-import imgFazenda from '../../../../assets/logo.png'
 
-export const Detalhes = () => {
+export const Detalhes = ({ nomeDaFazenda, nomeDaCesta, preco, descricao, logo }) => {
 
   return(
   <>
-    <Texto style={styles.nomeDaCesta}>Cesta de Verduras</Texto>
+    <Texto style={styles.nomeDaCesta}>{nomeDaCesta}</Texto>
     <View style={styles.fazenda}>
-      <Image source={imgFazenda} style={styles.imgFazenda}/>
-      <Texto style={styles.nomeFazenda}>Jenny Jack Farm</Texto>
+      <Image source={logo} style={styles.imgFazenda}/>
+      <Texto style={styles.nomeFazenda}>{nomeDaFazenda}</Texto>
     </View>
-    <Texto style={styles.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto pra sua cozinha.</Texto>
-    <Texto style={styles.preco}>R$ 40,00</Texto>
+    <Texto style={styles.descricao}>{descricao}</Texto>
+    <Texto style={styles.preco}>{preco}</Texto>
   </>
   )
 }

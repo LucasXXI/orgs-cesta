@@ -5,12 +5,12 @@ import topo from '../../../../assets/topo.png';
 
 const width = Dimensions.get('screen').width
 
-export const Topo = () => {
+export const Topo = ({ titulo }) => {
 
   return (
     <>
       <Image source={topo} style={styles.topo}/>
-      <Texto style={styles.titulo}>Detalhes da Sexta</Texto>
+      <Texto style={styles.titulo}>{titulo}</Texto>
     </>
   )
 }

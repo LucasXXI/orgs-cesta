@@ -3,12 +3,12 @@ import { StyleSheet,View } from 'react-native';
 import { Topo } from './components/Topo'
 import { Detalhes } from './components/Detalhes'
 
-export const Cesta = () => {
+export const Cesta = ({ topo, detalhes }) => {
   return(
     <>
-      <Topo/>
+      <Topo {...topo}/>
       <View style={styles.cesta}>
-        <Detalhes/>
+        <Detalhes {...detalhes} />
       </View>
     </>
   )
