@@ -1,5 +1,5 @@
 import { StatusBar, SafeAreaView, StyleSheet, Text, View} from 'react-native';
-import { Cesta } from './src/views/Cesta.js';
+import { Cesta } from './src/views/cesta/index.js';
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
 
 export default function App() {
