@@ -5,7 +5,7 @@ import { Text, StyleSheet } from "react-native";
 export const Texto = ({ children, style }) => {
   let estilo = styles.texto
 
-  if(style?.fontWeight === 'bold'){
+  if (style?.fontWeight === 'bold') {
     estilo = styles.textoNegrito
   }
 

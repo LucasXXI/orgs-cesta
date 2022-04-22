@@ -5,16 +5,16 @@ import { Texto } from '../../../components/Texto.js'
 
 export const Detalhes = ({ nomeDaFazenda, nomeDaCesta, preco, descricao, logo }) => {
 
-  return(
-  <>
-    <Texto style={styles.nomeDaCesta}>{nomeDaCesta}</Texto>
-    <View style={styles.fazenda}>
-      <Image source={logo} style={styles.imgFazenda}/>
-      <Texto style={styles.nomeFazenda}>{nomeDaFazenda}</Texto>
-    </View>
-    <Texto style={styles.descricao}>{descricao}</Texto>
-    <Texto style={styles.preco}>{preco}</Texto>
-  </>
+  return (
+    <>
+      <Texto style={styles.nomeDaCesta}>{nomeDaCesta}</Texto>
+      <View style={styles.fazenda}>
+        <Image source={logo} style={styles.imgFazenda} />
+        <Texto style={styles.nomeFazenda}>{nomeDaFazenda}</Texto>
+      </View>
+      <Texto style={styles.descricao}>{descricao}</Texto>
+      <Texto style={styles.preco}>{preco}</Texto>
+    </>
   )
 }
 

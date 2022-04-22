@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet,View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Topo } from './components/Topo'
 import { Detalhes } from './components/Detalhes'
 
 export const Cesta = ({ topo, detalhes }) => {
-  return(
+  return (
     <>
-      <Topo {...topo}/>
+      <Topo {...topo} />
       <View style={styles.cesta}>
         <Detalhes {...detalhes} />
       </View>

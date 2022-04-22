@@ -1,6 +1,6 @@
 import React from 'react'
-import { Image, StyleSheet, Dimensions  } from 'react-native'
-import {  Texto  } from '../../../components/Texto.js'
+import { Image, StyleSheet, Dimensions } from 'react-native'
+import { Texto } from '../../../components/Texto.js'
 import topo from '../../../../assets/topo.png';
 
 const width = Dimensions.get('screen').width
@@ -9,7 +9,7 @@ export const Topo = ({ titulo }) => {
 
   return (
     <>
-      <Image source={topo} style={styles.topo}/>
+      <Image source={topo} style={styles.topo} />
       <Texto style={styles.titulo}>{titulo}</Texto>
     </>
   )
@@ -18,7 +18,7 @@ export const Topo = ({ titulo }) => {
 const styles = StyleSheet.create({
   topo: {
     width: '100%',
-    height: 578/768 * width
+    height: 578 / 768 * width
   },
 
   titulo: {
