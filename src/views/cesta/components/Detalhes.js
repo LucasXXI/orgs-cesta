@@ -2,8 +2,9 @@ import React from 'react'
 import { View, Image, StyleSheet } from 'react-native'
 
 import { Texto } from '../../../components/Texto.js'
+import { Botao } from '../../../components/Botao.js'
 
-export const Detalhes = ({ nomeDaFazenda, nomeDaCesta, preco, descricao, logo }) => {
+export const Detalhes = ({ nomeDaFazenda, nomeDaCesta, preco, descricao, logo, botao}) => {
 
   return (
     <>
@@ -14,6 +15,7 @@ export const Detalhes = ({ nomeDaFazenda, nomeDaCesta, preco, descricao, logo })
       </View>
       <Texto style={styles.descricao}>{descricao}</Texto>
       <Texto style={styles.preco}>{preco}</Texto>
+      <Botao>{botao}</Botao>
     </>
   )
 }
@@ -54,5 +56,5 @@ const styles = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     marginTop: 8
-  }
+  },
 })

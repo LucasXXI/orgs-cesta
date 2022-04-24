@@ -1,0 +1,38 @@
+import React from 'react'
+import { Image, View, StyleSheet } from 'react-native'
+
+import { Texto } from './Texto'
+
+export const Item = ({item: { nome, imagem }}) => {
+
+  return<>
+    <View style={styles.item}>
+     <Image source={imagem} styles={styles.imagem}/>
+     <Texto style={styles.nome}>{nome}</Texto>
+  </View>
+  </>
+}
+
+const styles = StyleSheet.create({
+
+  item:{
+    flexDirection: 'row',
+    borderBottomWidth: 1, 
+    borderBottomColor: '#ECECEC',
+    paddingVertical: 16,
+    marginHorizontal: 16,
+    alignItems: 'center',
+  },
+
+  imagem: {
+    width: 46,
+    height: 46,
+  },
+
+  nome: {
+    fontSize: 16,
+    lineHeight: 26,
+    marginLeft: 11,
+    color: "#464646"
+  }
+})
